@@ -12,6 +12,22 @@ code {
     monospace;
 }
 
-h2{
-  color: aqua;
+.container{
+  height:400px;
+  width:200px;
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 40px;
+  border: 1px solid black;
+  float: left;
+  margin:20px;
+}
+
+.websitecontainer{
+  padding:50px;
+}
+.bannerBox{
+  
+  width:850px;
+  text-align: center;
 }

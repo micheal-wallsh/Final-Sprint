@@ -1,0 +1,21 @@
+{"games":[{
+    "id": "1",
+    "console":"Nintendo Switch",
+    "name":"Super Smash Bros Ultimate",
+    "picture":"https://external-preview.redd.it/_wq5TFnymlf33K6o_hy4NnD1cDzIMB7Vg2SiXVo-dHw.jpg?auto=webp&s=447955d77286e4d4a421121b7fa813abf8bb3b13",
+    "price":"$79.99"
+  },
+  {
+    "id": "2",
+    "console":"Nintendo Switch",
+    "name":"The legend of zelda tears of the kingdom",
+    "picture":"https://imageio.forbes.com/specials-images/imageserve/63220c5a654e79ab76c1fa09/Zelda-Tears-of-the-Kingdom-boxart/960x0.png?format=png&width=1440",
+    "price":"$79.99"
+  },
+  {
+    "id": "3",
+    "console":"Playstation",
+    "name":"Spider-man 2",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$79.99"
+  }]}
