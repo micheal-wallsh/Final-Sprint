@@ -5,8 +5,6 @@ import Games from './Games';
 
 
 const Psgames = ({games}) => {
-   console.log(Array.isArray(games))
-   console.log(games);
   let output = [];
   games.forEach((game)=>{
 
@@ -21,12 +19,13 @@ return (
     <button>back</button>
     <div className = "websitecontainer">
        
- <Games games={output}/>
+ 
   <div class = "bannerBox">
+  
   <img src = "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_switch_1/nintendo_switch_oled_2/H2x1_NintendoSwitch_Family_enGB.jpg" 
   height = "200px" width = "650px"/> 
 <div class = "gameBox">
-
+<Games games={output}/>
 
 </div>
  </div>

@@ -1,12 +1,11 @@
-import Games from "./Games"
+import React from 'react'
+import Games from"./Games"
 
-
-const Switchgames = ({games}) => {
-   
+const Xboxgames = ({games}) => {
   let output = [];
   games.forEach((game)=>{
 
-      if(game.console ==="Nintendo Switch")
+      if(game.console ==="Xbox Series X")
       {
           output.push(game);
       }})
@@ -29,8 +28,7 @@ return (
  </div>
  </div>
  </div>
-)
-};
+  )
+}
 
-
-export default Switchgames
+export default Xboxgames

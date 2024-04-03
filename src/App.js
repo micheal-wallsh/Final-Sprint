@@ -3,6 +3,7 @@ import Switchgames from "./Componets/Switchgames"
 import PSgames from "./Componets/Psgames"
 import './App.css';
 import Psgames from './Componets/Psgames';
+import Xboxgames from"./Componets/Xboxgames"
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import GameDetails1 from "./Componets/Gamedetails1"
@@ -35,7 +36,7 @@ console.log("The data is an "+ Array.isArray(games))
       <hr/>
       </header>
       {games.length > 0 ? (
-      <Psgames  games={games}/>)
+      <Switchgames  games={games}/>)
       : (
         "No games to show"
       )}
