@@ -20,21 +20,25 @@ function App() {
   
 
   useEffect(() => {
-    const getTasks = async () => {
+    const getGames = async () => {
       const tasksFromServer = await fetchGames();
       setGames(tasksFromServer);
     };
-    getTasks();
+    getGames();
   }, []);
 
-
+console.log("The data is an "+ Array.isArray(games))
   return (
     <div className="App">
       <header>
       <h2>Company Name</h2>
       <hr/>
       </header>
-      <PSgames games={games}/>
+      {games.length > 0 ? (
+      <Psgames  games={games}/>)
+      : (
+        "No games to show"
+      )}
       <Router>
       <Routes>
     
