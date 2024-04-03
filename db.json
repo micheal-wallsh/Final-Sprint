@@ -3,19 +3,190 @@
     "console":"Nintendo Switch",
     "name":"Super Smash Bros Ultimate",
     "picture":"https://external-preview.redd.it/_wq5TFnymlf33K6o_hy4NnD1cDzIMB7Vg2SiXVo-dHw.jpg?auto=webp&s=447955d77286e4d4a421121b7fa813abf8bb3b13",
-    "price":"$79.99"
+    "price":"$79.99",
+    "info":"Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more! Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle. Whether you play locally* or online**, savor the faster combat, new attacks, and new defensive options, like a perfect shield. Jam out to 900 different music compositions and go 1-on-1 with a friend, hold a 4-player free-for-all*, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!"
+
   },
   {
     "id": "2",
     "console":"Nintendo Switch",
     "name":"The legend of zelda tears of the kingdom",
     "picture":"https://imageio.forbes.com/specials-images/imageserve/63220c5a654e79ab76c1fa09/Zelda-Tears-of-the-Kingdom-boxart/960x0.png?format=png&width=1440",
-    "price":"$79.99"
+    "price":"$79.99",
+    "info":"In this sequel to The Legend of Zelda: Breath of the Wild, you’ll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link’s new abilities to fight back against the malevolent forces that threaten the kingdom?"
   },
   {
     "id": "3",
-    "console":"Playstation",
+    "console":"Nintendo Switch",
+    "name":"The legend of Zelda Breath of the wild",
+    "picture":"/Users/keyinstudent/Documents/Final-Sprint/src/Pictures/Zelda Botw.jpeg",
+    "price":"$79.99",
+    "info":"Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration, and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking game in the acclaimed series. Travel across vast fields, through forests, and to mountain peaks as you discover what has become of the kingdom of Hyrule in this stunning Open-Air Adventure. After a 100-year slumber, Link wakes up alone in a world he no longer remembers. Now the legendary hero must explore a vast and dangerous land and regain his memories before Hyrule is lost forever. On the Nintendo Switch, your journey is freer and more open than ever. Take your system anywhere, and adventure as Link any way you like."
+  },
+  {
+    "id": "4",
+    "console":"Nintendo Switch",
+    "name":"Xenoblade Chronicles 3",
+    "picture":"/Users/keyinstudent/Documents/Final-Sprint/src/Pictures/Xenoblade 3.jpeg",
+    "price":"$79.99",
+    "info":"Live to fight and fight to live in a warring world with a dark secret. Join Noah and Mio, members of the two opposing nations at the center of this conflict, on a heartfelt journey to end the cycle of violence. A group of six characters from these nations join together to awaken the colonies of Aionios to the underlying threat both nations face. Traverse massive, fantastical sci-fi landscapes as you expose the true enemy pulling the strings behind the conflicts."
+  },
+  {
+    "id": "5",
+    "console":"Nintendo Switch",
+    "name":"Fire Emblem Three Houses",
+    "picture":"/Users/keyinstudent/Documents/Final-Sprint/src/Pictures/FE Three houses.jpeg",
+    "price":"$79.99",
+    "info":"War is coming to the continent of Fódlan. Here, order is maintained by the Church of Seiros, which hosts the prestigious Officer’s Academy within its headquarters. You are invited to teach one of its three mighty houses, each comprised of students brimming with personality and represented by a royal from one of three territories. As their professor, you must lead your students in their academic lives and in turn-based, tactical RPG battles wrought with strategic, new twists to overcome. Which house, and which path, will you choose?"
+  },
+  {
+    "id": "6",
+    "console":"Nintendo Switch",
+    "name":"Metroid Dread",
+    "picture":"/Users/keyinstudent/Documents/Final-Sprint/src/Pictures/Metriod.jpeg",
+    "price":"$79.99",
+    "info":"Upon investigating a mysterious transmission on Planet ZDR, Samus faces a mysterious foe that traps her in this dangerous world. The remote planet has been overrun by vicious alien lifeforms and murderous robots called E.M.M.I. Hunt or be hunted as you make your way through a labyrinth of enemies in Samus’ most intense side-scrolling adventure yet.Gain abilities and return to previous areas to find new areas and hidden upgrades in classic Metroid gameplay. Planet ZDR's sprawling map is home to many secrets to discover and powers to find. You'll need to be prepared to evade and destroy E.M.M.I. robots and overcome the dread plaguing ZDR."
+  },
+  {
+    "id": "7",
+    "console":"Nintendo Switch",
+    "name":"Mario Cart 8 Deluxe",
+    "picture":"/Users/keyinstudent/Documents/Final-Sprint/src/Pictures/Mario Kart.jpeg",
+    "price":"$79.99",
+    "info":"Hit the road with the definitive version of Mario Kart 8 and play anytime, anywhere! Race your friends or battle them in a revised battle mode on new and returning battle courses. Play locally in up to 4-player multiplayer** in 1080p while playing in TV Mode. Every track from the Wii U version, including DLC, makes a glorious return. Plus, the Inklings appear as all-new guest characters, along with returning favorites, such as King Boo, Dry Bones, and Bowser Jr.!"
+  },
+  {
+    "id": "8",
+    "console":"Nintendo Switch",
+    "name":"Super Mario Odyssey",
+    "picture":"/Users/keyinstudent/Documents/Final-Sprint/src/Pictures/Mario odyssey.jpeg",
+    "price":"$79.99",
+    "info":"Join Mario on a massive, globe-trotting 3D adventure and use his incredible new abilities to collect Moons so you can power up your airship, the Odyssey, and rescue Princess Peach from Bowser's wedding plans! This sandbox-style 3D Mario adventure—the first since 1996's beloved Super Mario 64 and 2002's Nintendo GameCube classic Super Mario Sunshine—is packed with secrets and surprises, and with Mario's new moves like cap throw, cap jump, and capture, you'll have fun and exciting gameplay experiences unlike anything you've enjoyed in a Mario game before. Get ready to be whisked away to strange and amazing places far from the Mushroom Kingdom!"
+  },
+  {
+    "id": "9",
+    "console":"Playstation 5",
     "name":"Spider-man 2",
     "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
-    "price":"$79.99"
+    "price":"$79.99",
+    "info":"Spider-Men, Peter Parker and Miles Morales, return for an exciting new adventure in the critically acclaimed Marvel’s Spider-Man franchise. Swing, jump, and utilize the new Web Wings to travel across Marvel’s New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers, as the iconic villain Venom threatens to destroy their lives, their city, and the ones they love."
+  },
+  {
+    "id": "10",
+    "console":"Playstation 5",
+    "name":"Final Fantasy 7 Rebirth",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"FINAL FANTASY VII REBIRTH is the highly anticipated new story in the FINAL FANTASY VII remake project, a reimagining of the iconic original game into three standalone titles by its original creators. In this game, players will enjoy various new elements as the story unfolds, culminating in the party’s journey to “The Forgotten Capital” from the original FINAL FANTASY VII."
+  },
+  {
+    "id": "11",
+    "console":"Playstation 5",
+    "name":"Ratchet and Clank Rift Apart",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99"
+  },
+  {
+    "id": "12",
+    "console":"Playstation 5",
+    "name":"Ratchet and Clank Rift Apart",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"The intergalactic adventurers are back with a bang in Ratchet & Clank: Rift Apart. Help them stop a robotic emperor intent on conquering cross-dimensional worlds, with their own universe next in the firing line.Built from the ground up by acclaimed studio Insomniac Games, go above and beyond with the mind-blowing speed and immersive features of the PS5™ console. Brand-new haptic feedback and adaptive trigger technology creates astonishing physical sensations, bringing in-game actions to life in your hands via the DualSense™ wireless controller."
+  },
+  {
+    "id": "13",
+    "console":"Playstation 5",
+    "name":"Gran Turismo 7",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"With the reintroduction of the legendary GT Simulation Mode*, buy, tune, race and sell your way through a rewarding solo campaign as you unlock new cars and challenges. And if you love going head-to-head with others, hone your skills and compete in the GT Sport Mode."
+  },
+  {
+    "id": "14",
+    "console":"Playstation 5",
+    "name":"Horizon Forbidden West",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"Join Aloy as she braves a majestic but dangerous new frontier that holds mysterious new threats. This Complete Edition allows you to enjoy the critically acclaimed Horizon Forbidden West in its entirety with bonus content, including the Burning Shores story expansion that picks up where the main game left off."
+  },
+  {
+    "id": "15",
+    "console":"Playstation 5",
+    "name":"Final Fantasy 16",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"For centuries, people have flocked to her Mothercrystals to partake of their blessing—the abundant aether that fuels the magicks they rely upon in their everyday lives. But as the aether begins to fade and the lifeless deadlands spread ever further, so too does the struggle over the final flickers of the Mothers' light grow ever more fierce. Bloody battle rages across the realm, rival nations sending their ultimate weapons against each other: the Dominants. Men and women within whom sleep the world-shattering power of an Eikon."
+  },
+  {
+    "id": "16",
+    "console":"Playstation 5",
+    "name":"God of War Ragnarok",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"Embark on an epic and heartfelt journey as Kratos and Atreus struggle with holding on and letting go. Against a backdrop of Norse Realms torn asunder by the fury of the Aesir, they’ve been trying their utmost to undo the end times. But despite their best efforts, Fimbulwinter presses onward. Witness the changing dynamic of the father-son relationship as they fight for survival; Atreus thirsts for knowledge to help him understand the prophecy of “Loki”, as Kratos struggles to break free of his past and be the father his son needs."
+  },
+  {
+    "id": "17",
+    "console":"Xbox Series X",
+    "name":"Halo Infinite",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$79.99",
+    "info":"When all hope is lost and humanity’s fate hangs in the balance, the Master Chief is ready to confront the most ruthless foe he’s ever faced. The legendary Halo series returns with the most expansive Master Chief story yet."
+  },
+  {
+    "id": "18",
+    "console":"Xbox Series X",
+    "name":"Starfield",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"In the year 2330, humanity has ventured beyond our solar system, settling new planets, and living as a spacefaring people. You will join Constellation – the last group of space explorers seeking rare artifacts throughout the galaxy – and navigate the vast expanse of space in Bethesda Game Studios’ biggest and most ambitious game."
+  },
+  {
+    "id": "19",
+    "console":"Xbox Series X",
+    "name":"Sea of Thieves",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$49.99",
+    "info":"Sea of Thieves offers the essential pirate experience, packed to the seams with sailing and exploring, fighting and plundering, riddle solving and treasure hunting – everything you need to live the pirate life you’ve always dreamed about. With no set roles, you have complete freedom to approach the world, and other players, however you choose."
+  },
+  {
+    "id": "20",
+    "console":"Xbox Series X",
+    "name":"Forza Horizon 5 Deluxe Edition",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$99.99",
+    "info":"Your Ultimate Horizon Adventure awaits! Explore the vibrant and ever-evolving open world landscapes of Mexico with limitless, fun driving action in hundreds of the world’s greatest cars."
+  },
+  {
+    "id": "21",
+    "console":"Xbox Series X",
+    "name":"Star Wars Jedi Suvivor",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"The story of Cal Kestis continues in Star Wars Jedi: Survivor™, a third person galaxy-spanning action-adventure game from Respawn Entertainment, developed in collaboration with Lucasfilm Games. This narratively-driven, single player title picks up five years after the events of Star Wars Jedi: Fallen Order™ and follows Cal’s increasingly desperate fight as the galaxy descends further into darkness. Pushed to the edges of the galaxy by the Empire, Cal will find himself surrounded by threats new and familiar. As one of the last surviving Jedi Knights, Cal is driven to make a stand during the galaxy’s darkest times - but how far is he willing to go to protect himself, his crew, and the legacy of the Jedi Order?"
+  },
+  {
+    "id": "22",
+    "console":"Xbox Series X",
+    "name":"Hi-Fi Rush",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$29.99",
+    "info":"Feel the beat as wannabe rockstar Chai and his ragtag team of allies rebel against an evil robotics enhancement megacorp with raucous rhythm combat! From Tango Gameworks, the studio that brought you The Evil Within® and Ghostwire®:Tokyo (no, really) comes Hi-Fi RUSH, an all-new action game where the characters, world and combat stylishly sync to the music!"
+  },
+  {
+    "id": "23",
+    "console":"Xbox Series X",
+    "name":"Microsoft Flight Simulator",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$89.99",
+    "info":"From light planes to wide-body jets, fly highly detailed and accurate aircraft in the next generation of Microsoft Flight Simulator. Test your piloting skills against the challenges of night flying, real-time atmospheric simulation and live weather in a dynamic and living world. Create your flight plan to anywhere on the planet. The world is at your fingertips."
+  },
+  {
+    "id": "24",
+    "console":"Xbox Series X",
+    "name":"Grounded",
+    "picture":"https://static-ca.gamestop.ca/images/products/779940/3max.jpg",
+    "price":"$39.99",
+    "info":"The world is a vast, beautiful, and dangerous place – especially when you have been shrunk to the size of an ant. Explore, build and survive together in this first-person, multiplayer, survival adventure. Can you thrive alongside the hordes of giant insects, fighting to survive the perils of the backyard?"
   }]}

@@ -22,12 +22,15 @@ code {
   float: left;
   margin:20px;
 }
+.gameBox{
+  width: 1200px;
+}
 
 .websitecontainer{
   padding:50px;
 }
 .bannerBox{
   
-  width:850px;
+  width:1200px;
   text-align: center;
 }
