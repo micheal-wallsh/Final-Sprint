@@ -1,14 +1,9 @@
 import React from 'react'
 
-const Games = (games) => {
-let i = 0
-   let gameData = [];
-   while(i<= games.legent-1){
-    gameData.push(games[i]);
-   }
+const Games = ({games}) => {
   return (
    <>
-   { gameData.map((game) => (
+   { games.map((game) => (
         <div class = "container">
          <img src = {game.picture} width ="136" height ="243"/>
             <p>{game.name}</p>
