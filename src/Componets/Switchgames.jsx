@@ -1,4 +1,6 @@
 import Games from "./Games"
+import Gamedetails1 from "./Gamedetails1"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 const Switchgames = ({games}) => {
@@ -24,6 +26,7 @@ return (
   height = "200px" width = "650px"/> 
 <div class = "gameBox">
 <Games games={output}/>
+
 
 </div>
  </div>

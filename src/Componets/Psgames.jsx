@@ -1,10 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Gamedetails from "./Gamedetails1";
+import { useNavigate } from "react-router-dom";
 import Games from './Games';
+import Button from './Button';
 
 
 const Psgames = ({games}) => {
+  const navigate = useNavigate();
   let output = [];
   games.forEach((game)=>{
 
@@ -16,7 +17,8 @@ const Psgames = ({games}) => {
 return (
   
   <div>
-    <button>back</button>
+    <Button color ={"white"} text = {"Back"} onClick = {() => {
+          navigate(-1)}}/>
     <div className = "websitecontainer">
        
  

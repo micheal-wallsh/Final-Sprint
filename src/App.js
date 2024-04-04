@@ -6,10 +6,13 @@ import Psgames from './Componets/Psgames';
 import Xboxgames from"./Componets/Xboxgames"
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import GameDetails1 from "./Componets/Gamedetails1"
+import Gamedetails1 from "./Componets/Gamedetails1"
+import Checkout from './Componets/Checkout';
+import Header from "./Componets/Header"
 
 function App() {
   let [games, setGames] = useState([]);
+  let cartGames = [];
 
   const fetchGames= async () => {
     const res = await fetch("http://localhost:5000/games");
@@ -30,23 +33,29 @@ function App() {
 
 console.log("The data is an "+ Array.isArray(games))
   return (
+    
     <div className="App">
-      <header>
-      <h2>Company Name</h2>
-      <hr/>
-      </header>
+    
+      <Router>
+      <Header/>
+      <Routes>
+      <Route path ="/" element = {<>
       {games.length > 0 ? (
       <Switchgames  games={games}/>)
       : (
         "No games to show"
       )}
-      <Router>
-      <Routes>
+      </>}/>
     
-     <Route path ="/gamedetails:id" element = {<GameDetails1/>}/>
+     <Route path ="/gamedetails/:id" element = {<Gamedetails1 cartGames={cartGames}/>}/>
+     <Route path ="/cart" element = {<Checkout games ={cartGames}/>}/>
+     
      </Routes>
+     
      </Router>
+     
          </div>
+         
   );
 }
 
