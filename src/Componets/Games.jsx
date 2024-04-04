@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Button from "./Button";
 
-const Games = ({games}) => {
+const Games = ({games, cartGames}) => {
+    console.log(cartGames);
   return (
    <>
    { games.map((game) => (
@@ -12,7 +14,9 @@ const Games = ({games}) => {
 
          <img src = {game.picture} width ="136" height ="243"/>
             <p>{game.name}</p>
-            <p>{game.price}</p> 
+            <p>${game.price}</p>
+            <Button color ={"red"} text = {"Add to cart"} onClick = {() => {
+          cartGames.push(game)}}/> 
           </div>
       ))}
    </>

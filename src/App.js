@@ -40,11 +40,9 @@ console.log("The data is an "+ Array.isArray(games))
       <Header/>
       <Routes>
       <Route path ="/" element = {<>
-      {games.length > 0 ? (
-      <Switchgames  games={games}/>)
-      : (
-        "No games to show"
-      )}
+      
+      <Switchgames  games={games} cartGames={cartGames}/>
+      
       </>}/>
     
      <Route path ="/gamedetails/:id" element = {<Gamedetails1 cartGames={cartGames}/>}/>

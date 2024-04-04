@@ -1,9 +1,8 @@
 import Games from "./Games"
-import Gamedetails1 from "./Gamedetails1"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
-const Switchgames = ({games}) => {
+
+const Switchgames = ({games, cartGames}) => {
    
   let output = [];
   games.forEach((game)=>{
@@ -25,7 +24,7 @@ return (
   <img src = "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_switch_1/nintendo_switch_oled_2/H2x1_NintendoSwitch_Family_enGB.jpg" 
   height = "200px" width = "650px"/> 
 <div class = "gameBox">
-<Games games={output}/>
+<Games games={output} cartGames={cartGames}/>
 
 
 </div>
