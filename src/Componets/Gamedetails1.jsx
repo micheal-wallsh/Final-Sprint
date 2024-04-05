@@ -40,8 +40,23 @@ console.log(data);
                 {gameDetails.info}
             </p>
         </div>
+        {
+        gameDetails.name != cartGames.forEach((game)=>{
+          return game.name
+        }) ? (
+     
         <Button color ={"red"} text = {"Add to cart"} onClick = {() => {
-          cartGames.push(gameDetails)}}/>
+        cartGames.push(gameDetails)
+        gameDetails.cart = true
+        console.log("cart"+gameDetails.cart);
+      }
+      }/> 
+        ): (
+        <p>
+            
+            Game in cart
+        </p>
+        )}
     </div>
     </div>
   )

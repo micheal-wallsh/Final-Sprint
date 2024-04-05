@@ -4,7 +4,7 @@ import Checkoutgames from './Checkoutgames'
 const Checkoutformat = ({games, price}) => {
   return (
     <div>
-    <Checkoutgames games ={games}/>
+    <Checkoutgames games ={games} cartGames = {games}/>
     <br/>
     <h4>Total</h4>
     <hr/>

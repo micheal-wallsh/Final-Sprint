@@ -18,7 +18,7 @@ games.forEach((game)=>{
           navigate(-1)}}/> 
           {games.length > 0 ? (
      
-            <Checkoutformat games = {games} price = {price}/>
+            <Checkoutformat games = {games} price = {price} />
       ): (
         <p>
             No games in cart
