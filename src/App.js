@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Switchgames from "./Componets/Switchgames"
+import Switchgames from "./Componets/Switch/Switchgames"
 import PSgames from "./Componets/Psgames"
 import './App.css';
 import Psgames from './Componets/Psgames';
@@ -39,19 +39,15 @@ console.log("The data is an "+ Array.isArray(games))
       <Router>
       <Header/>
       <Routes>
-      <Route path ="/" element = {<>
       
-      <Switchgames  games={games} cartGames={cartGames}/>
-      
-      </>}/>
-    
-     <Route path ="/gamedetails/:id" element = {<Gamedetails1 cartGames={cartGames}/>}/>
-     <Route path ="/cart" element = {<Checkout games ={cartGames}/>}/>
+      <Route path ="/switch" element = {<Switchgames games={games} cartGames={cartGames}/>}/>
+      <Route path ="/gamedetails/:id" element = {<Gamedetails1 cartGames={cartGames}/>}/>
+      <Route path ="/cart" element = {<Checkout games ={cartGames}/>}/>
      
-     </Routes>
+    </Routes>
      
-     </Router>
-     
+    </Router>
+        <div>hey</div>
          </div>
          
   );

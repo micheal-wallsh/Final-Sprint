@@ -1,9 +1,11 @@
-import Games from "./Games"
-
+import Games from "../Games"
+import Button from '../Button';
+import { useNavigate } from "react-router-dom";
 
 
 const Switchgames = ({games, cartGames}) => {
    
+  const navigate = useNavigate();
   let output = [];
   games.forEach((game)=>{
 
@@ -15,7 +17,8 @@ const Switchgames = ({games, cartGames}) => {
 return (
   
   <div>
-    <button>back</button>
+    <Button color ={"white"} text = {"Back"} onClick = {() => {
+          navigate(-1)}}/> 
     <div className = "websitecontainer">
        
  
