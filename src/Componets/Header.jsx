@@ -9,7 +9,7 @@ const Header = (games) => {
     <div className="navBar">
       <div className="logoSpace">
         <img src={logo} width="75px" height="100px" id="logo"></img>
-        <p>GAME OVER GAME STORE</p>
+        <p id="logoText">GAME OVER GAME STORE</p>
       </div>
       <div className="bannerSpace">
         hey
