@@ -1,4 +1,47 @@
 .navBar {
-    background-color: gray;
-    margin: auto;
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(93, 226, 226);
+}
+.logoSpace{
+    display: flex;
+    flex: 1;
+    align-content: start;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+} p {
+    height: 50px;
+    width: 400px;
+    margin: 0%;
+    font-size: xx-large;
+    color: rgb(28, 205, 218);
+    text-shadow: 1px 1px 2px black;
+    margin-left: 50px;
+} #logo {
+    margin-left: 20px;
+}
+.bannerSpace{
+    flex: 1;
+}
+.buttonSpace{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.cartButton {
+    background-color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 100px;
+    transition: scale 0.1s ease-out 100ms
+}
+.cartButton:hover {
+    scale:1.1;
 }
