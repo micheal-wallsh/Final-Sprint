@@ -9,15 +9,15 @@ const Games = ({games, cartGames}) => {
    { games.map((game) => (
         <div class = "container">
             <Link to ={`/gamedetails/${game.id}`}>
-                details
+            <img src = {game.picture} width ="136" height ="243"/>
             </Link>
 
-         <img src = {game.picture} width ="136" height ="243"/>
-            <p>{game.name}</p>
-            <p>${game.price}</p>
+         
+            <p id="name">{game.name}</p>
+            <p id="price">${game.price}</p>
         
      
-        <Button color ={"red"} text = {"Add to cart"} onClick = {() => {
+        <Button text = {"Add to cart"} id="addToCart" onClick = {() => {
         cartGames.push(game)
         alert(game.name+" added to cart")}}/> 
           </div>

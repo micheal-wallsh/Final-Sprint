@@ -1,7 +1,11 @@
-import React from 'react'
-import Games from"./Games"
+import Games from "../Games"
+import Button from '../Button';
+import { useNavigate } from "react-router-dom";
 
-const Xboxgames = ({games}) => {
+
+const XboxPage = ({games, cartGames}) => {
+   
+  const navigate = useNavigate();
   let output = [];
   games.forEach((game)=>{
 
@@ -13,7 +17,8 @@ const Xboxgames = ({games}) => {
 return (
   
   <div>
-    <button>back</button>
+    <Button color ={"white"} text = {"Back"} onClick = {() => {
+          navigate(-1)}}/> 
     <div className = "websitecontainer">
        
  
@@ -22,13 +27,15 @@ return (
   <img src = "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_switch_1/nintendo_switch_oled_2/H2x1_NintendoSwitch_Family_enGB.jpg" 
   height = "200px" width = "650px"/> 
 <div class = "gameBox">
-<Games games={output}/>
+<Games games={output} cartGames={cartGames}/>
+
 
 </div>
  </div>
  </div>
  </div>
-  )
-}
+)
+};
 
-export default Xboxgames
+
+export default XboxPage

@@ -3,13 +3,13 @@ import Button from '../Button';
 import { useNavigate } from "react-router-dom";
 
 
-const Switchgames = ({games, cartGames}) => {
+const PlaystationPage = ({games, cartGames}) => {
    
   const navigate = useNavigate();
   let output = [];
   games.forEach((game)=>{
 
-      if(game.console ==="Nintendo Switch")
+      if(game.console ==="Playstation 5")
       {
           output.push(game);
       }})
@@ -38,4 +38,4 @@ return (
 };
 
 
-export default Switchgames
+export default PlaystationPage

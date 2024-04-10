@@ -1,16 +1,14 @@
 import logo from './logo.svg';
-import Switchgames from "./Componets/Switch/Switchgames"
-import PSgames from "./Componets/Psgames"
 import './App.css';
-
-import Psgames from './Componets/Psgames';
-import Xboxgames from"./Componets/Xboxgames"
+import SwitchPage from "./Components/Switch/SwitchPage"
+import PlaystationPage from"./Components/Playstation/PlaystationPage"
+import XboxPage from"./Components/Xbox/XboxPage"
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Gamedetails1 from "./Componets/Gamedetails1"
-import Checkout from './Componets/Checkout';
-import HomePage from "./Componets/HomePage"
-import Header from "./Componets/Header"
+import Gamedetails1 from "./Components/Gamedetails1"
+import Checkout from './Components/Checkout';
+import HomePage from "./Components/HomePage"
+import Header from "./Components/Header"
 
 function App() {
   let [games, setGames] = useState([]);
@@ -34,23 +32,23 @@ function App() {
   }, []);
 
 console.log("The data is an "+ Array.isArray(games))
-  return (
-    
-    <div className="App">
-    
-      <Router>
-      <Header/>
-      <Routes>
-      
-      <Route path ="/switch" element = {<Switchgames games={games} cartGames={cartGames}/>}/>
-      <Route path ="/gamedetails/:id" element = {<Gamedetails1 cartGames={cartGames}/>}/>
-      <Route path ="/cart" element = {<Checkout games ={cartGames}/>}/>
-      <Route path ="/" element = {<HomePage/>}/>
-    </Routes>
+return (
+  <div className="App">
+    <Router>
+      <Header />
+      <div className="appContent">
+        <Routes>
+          <Route path="/switch" element={<SwitchPage games={games} cartGames={cartGames} />} />
+          <Route path="/xbox" element={<XboxPage games={games} cartGames={cartGames} />} />
+          <Route path="/playstation" element={<PlaystationPage games={games} cartGames={cartGames} />} />
+          <Route path="/gamedetails/:id" element={<Gamedetails1 cartGames={cartGames} />} />
+          <Route path="/cart" element={<Checkout games={cartGames} />} />
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </div>
     </Router>
-    </div>
-         
-  );
+  </div>
+);
 }
 
 export default App;
