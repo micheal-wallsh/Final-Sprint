@@ -1,0 +1,27 @@
+.detailsPage {
+    display: grid;
+    width: 1000px;
+    margin-top: 10vh;
+    padding: 20px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+
+.gameInfo {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.gameInfo > h2 {
+    margin-top: 0;
+}
+
+.gameText {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: larger;
+}
+
+    

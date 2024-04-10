@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Button = ({text, onClick}) => {
+const BackButton = ({onClick}) => {
   return (
     <button
-      className="btn"
+      className="backButton"
       onClick={onClick}
     >
-        {text}
+    Return
     </button>
   )
 }
 
-export default Button
+export default BackButton

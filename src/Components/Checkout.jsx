@@ -1,7 +1,8 @@
 import React from 'react'
 import Checkoutformat from './Checkoutformat';
-import Button from './Button';
+import BackButton from './BackButton';
 import {  useNavigate } from "react-router-dom";
+import "./Checkout.css"
 
 const Checkout = ({games}) => {
 const navigate = useNavigate();
@@ -14,8 +15,9 @@ games.forEach((game)=>{
     
   return (
     <>
-    <Button color ={"white"} text = {"Back"} onClick = {() => {
+    <BackButton onClick = {() => {
           navigate(-1)}}/> 
+    <div className="checkoutItems">    
           {games.length > 0 ? (
      
             <Checkoutformat games = {games} price = {price} />
@@ -24,6 +26,7 @@ games.forEach((game)=>{
             No games in cart
         </p>
       )}
+    </div>  
   </>
   )
 }

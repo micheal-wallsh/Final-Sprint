@@ -1,7 +1,7 @@
 import Games from "../Games"
-import Button from '../Button';
+import BackButton from '../BackButton';
 import { useNavigate } from "react-router-dom";
-
+import banner from "./Switch-Banner.jpg"
 
 const SwitchPage = ({games, cartGames}) => {
    
@@ -17,15 +17,15 @@ const SwitchPage = ({games, cartGames}) => {
 return (
   
   <div>
-    <Button color ={"white"} text = {"Back"} onClick = {() => {
+    <BackButton onClick = {() => {
           navigate(-1)}}/> 
     <div className = "websitecontainer">
        
  
   <div class = "bannerBox">
   
-  <img src = "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/systems_11/nintendo_switch_1/nintendo_switch_oled_2/H2x1_NintendoSwitch_Family_enGB.jpg" 
-  height = "200px" width = "650px"/> 
+  <img src = {banner}
+  height = "200px" width = "800px"/> 
 <div class = "gameBox">
 <Games games={output} cartGames={cartGames}/>
 

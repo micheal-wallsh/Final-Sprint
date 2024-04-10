@@ -36,10 +36,36 @@ code {
   font-size: large;
 }
 
-Button#addToCart {
-  text-align: center;
-  width: 150px;
+#price {
+  margin-bottom: 5px;
 }
+
+.backButton {
+  border: none;
+  margin-top: 10px;
+  width: 100px;
+  height: 40px;
+  float: left;
+  font-size: large;
+  border-radius: 50px;
+}
+
+.btn {
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
 .gameBox{
   width: 1200px;
 }
