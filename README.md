@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Project Info
+
+Made by Micheal Walsh and Lucas Peddle
+Do npm install, npm start and then npm run server to get website up and running. 
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
