@@ -1,10 +1,23 @@
 import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 import React from 'react'
 import { useState } from "react";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
+class Details{
+  constructor(n,st,c,p,count,post,cardNum,cardExpir,cardSecur){
+      this.name = n;
+      this.stAdd = st;
+      this.city=c;
+      this.province = p;
+      this.country=count;
+      this.postal=post;
+      this.cardNum = cardNum
+      this.cardExpir = cardExpir
+      this.cardSecur = cardSecur
+  }
+}
 
-
-const Checkoutform = ({cartGames}) => {
+const Checkoutform = ({cartGames, purchaseInfo}) => {
   let [name, setName] = useState("");
   let [stAdd, setStAdd] = useState("");
   let [city, setCity] = useState("");
@@ -14,122 +27,156 @@ const Checkoutform = ({cartGames}) => {
   let [cardNumber, setCardNumber] = useState("");
   let [cardExrp, setCardExrp] = useState("");
   let [securityCode, setSecurityCode] = useState("");
+  const navigate = useNavigate();
 
     let onSubmit = (e) => {
         e.preventDefault();
-        if (!name||!stAdd||!city||!province||!country||!postal||cardNumber||!cardExrp||!securityCode) {
+        console.log(name)
+        if (name===""||!stAdd===""||!city===""||!province===""||!country===""||!postal===""||cardNumber===""||!cardExrp===""||!securityCode==="") {
           alert("Please fill all textboxs");
           return;
           
         }
-        alert(" Thank your for your purchase")
-
-        cartGames=[];
+        
+       let  details = new Details(name,stAdd,city,province,country,postal,cardNumber,cardExrp,securityCode)
+       purchaseInfo.push(details)
+       console.log("details: "+ purchaseInfo)
+       navigate("/confirm");
        
+      }
 
   return (
+    
     <div>
-      <p>Hi</p>
+      <br/>
+     
         <form  onSubmit={onSubmit}>
             
         <label>
             Name
         </label>
+        <br/>
         <input
           type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
           
+          onChange={(e) => setName(e.target.value)}
+          value={name}
         />
-
+<br/>
+<br/>
         <label>
                     Street Addresss
         </label>
+        <br/>
+        
         <input
           type="text"
-          value={stAdd}
-          onChange={(e) => setStAdd(e.target.value)}
           
+          onChange={(e) => setStAdd(e.target.value)}
+          value={stAdd}
         />
-    
+    <br/>
+    <br/>
 
       <label>
                     City
         </label>
+        <br/>
         <input
           type="text"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
           
+          onChange={(e) => setCity(e.target.value)}
+          value={city}
         />
+        <br/>
+        <br/>
 
         <label>
                     Province
         </label>
+        <br/>
         <input
           type="text"
-          value={province}
-          onChange={(e) => setProvince(e.target.value)}
           
+          onChange={(e) => setProvince(e.target.value)}
+          value={province}
         />
+        <br/>
+        <br/>
 
         <label>
                     Country
         </label>
+        <br/>
         <input
           type="text"
-          value={country}
-          onChange={(e) => setCountry(e.target.value)}
           
+          onChange={(e) => setCountry(e.target.value)}
+          value={country}
         />
+        <br/>
+        <br/>
 
         <label>
                     Postal Code
         </label>
+        <br/>
         <input
           type="text"
-          value={postal}
-          onChange={(e) => setPostal(e.target.value)}
           
+          onChange={(e) => setPostal(e.target.value)}
+          value={postal}
         />
+        <br/>
+        <br/>
 
         <label>
                     Card Number
         </label>
+        <br/>
         <input
           type="text"
-          value={cardNumber}
-          onChange={(e) => setCardNumber(e.target.value)}
           
+          onChange={(e) => setCardNumber(e.target.value)}
+          value={cardNumber}
         />
+        <br/>
+        <br/>
 
         <label>
                     Card Expirey Date
         </label>
+        <br/>
         <input
           type="text"
-          value={cardExrp}
-          onChange={(e) => setCardExrp(e.target.value)}
           
+          onChange={(e) => setCardExrp(e.target.value)}
+          value={cardExrp}
         />
+        <br/>
+        <br/>
 
         <label>
                     Card Security Code
         </label>
+        <br/>
         <input
           type="text" 
-          value={securityCode}
+          
           onChange={(e) => setSecurityCode(e.target.value)}
-         
+          value={securityCode}
         />
+        <br/>
+        <br/>
 
           <input type="submit" value="Sumbit"  />
           
           
         </form>
     </div>
+    
   )
 }
-}
+
 
 export default Checkoutform

@@ -10,10 +10,12 @@ import Checkout from './Components/Checkout';
 import HomePage from "./Components/HomePage"
 import Header from "./Components/Header"
 import Checkoutform from './Components/Checkoutform';
+import ConfirmForm from "./Components/ConfirmForm"
 
 function App() {
   let [games, setGames] = useState([]);
   let cartGames = [];
+  let purchaseInfo =[];
 
   const fetchGames= async () => {
     const res = await fetch("http://localhost:5000/games");
@@ -45,7 +47,8 @@ return (
           <Route path="/gamedetails/:id" element={<GameDetails cartGames={cartGames} />} />
           <Route path="/cart" element={<Checkout games={cartGames} />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="/cartForm" element={<Checkoutform cartGames={cartGames}/>}/>
+          <Route path="/cartForm" element={<Checkoutform cartGames={cartGames} purchaseInfo ={purchaseInfo}/>}/>
+          <Route path="/confirm" element={<ConfirmForm cartGames={cartGames} details ={purchaseInfo}/>}/>
         </Routes>
       </div>
     </Router>
