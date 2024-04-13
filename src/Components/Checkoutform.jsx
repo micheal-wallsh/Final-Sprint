@@ -25,7 +25,7 @@ const Checkoutform = ({cartGames}) => {
         alert(" Thank your for your purchase")
 
         cartGames=[];
-       
+      }
 
   return (
     <div>
@@ -43,7 +43,7 @@ const Checkoutform = ({cartGames}) => {
         />
 
         <label>
-                    Street Addresss
+                    Street Address
         </label>
         <input
           type="text"
@@ -104,7 +104,7 @@ const Checkoutform = ({cartGames}) => {
         />
 
         <label>
-                    Card Expirey Date
+                    Card Expiry Date
         </label>
         <input
           type="text"
@@ -129,7 +129,6 @@ const Checkoutform = ({cartGames}) => {
         </form>
     </div>
   )
-}
 }
 
 export default Checkoutform
