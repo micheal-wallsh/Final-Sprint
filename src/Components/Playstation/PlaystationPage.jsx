@@ -22,7 +22,7 @@ return (
     <div className = "websitecontainer">
        
  
-  <div class = "bannerBox">
+  <div className = "bannerBox">
   
   <img src = {banner} 
   height = "200px" width = "800px"/> 

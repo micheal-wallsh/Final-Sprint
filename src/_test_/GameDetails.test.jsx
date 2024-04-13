@@ -1,9 +1,10 @@
 import {render,screen} from "@testing-library/react"
-import Games from "../Components/Games";
+import Game from "../Components/Games";
 import { MemoryRouter } from "react-router-dom";
+import GameDetails from "../Components/GameDetails";
 
 
-describe("Games", ()=>{
+describe("Games Details", ()=>{
     const games = [{
         "id": "1",
         "console":"Nintendo Switch",
@@ -17,19 +18,25 @@ describe("Games", ()=>{
       const cartGames=[];
 
       test("img renders correctly", ()=>{
-        render(<MemoryRouter><Games games={games} cartGames={cartGames}/></MemoryRouter>);
+        render(<MemoryRouter><GameDetails games={games} cartGames={cartGames}/></MemoryRouter>);
 
         const imgElement = screen.getByRole("img")
         expect(imgElement).toBeInTheDocument();
       })
       test("info renders correctly", ()=>{
-        render(<MemoryRouter><Games games={games} cartGames={cartGames}/></MemoryRouter>);
+        render(<MemoryRouter><GameDetails games={games} cartGames={cartGames}/></MemoryRouter>);
 
-        const nameElement = screen.getByTestId("nameTest")
+        const nameElement = screen.getByTestId("gameName")
         expect(nameElement).toBeInTheDocument();
         
-        const priceElement = screen.getByTestId("priceTest")
+        const priceElement = screen.getByTestId("gameDes")
         expect(priceElement).toBeInTheDocument();
+
+        const consoleElement = screen.getByTestId("console")
+        expect(consoleElement).toBeInTheDocument();
+
+        const infoElement = screen.getByTestId("gameInfo")
+        expect(infoElement).toBeInTheDocument();
       })
 
      

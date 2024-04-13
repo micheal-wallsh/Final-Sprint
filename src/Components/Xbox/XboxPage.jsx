@@ -26,7 +26,7 @@ return (
   
   <img src = {banner} 
   height = "200px" width = "800px"/> 
-<div class = "gameBox">
+<div className = "gameBox">
 <Games games={output} cartGames={cartGames}/>
 
 

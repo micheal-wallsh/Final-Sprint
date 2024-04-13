@@ -9,6 +9,7 @@ import GameDetails from "./Components/GameDetails"
 import Checkout from './Components/Checkout';
 import HomePage from "./Components/HomePage"
 import Header from "./Components/Header"
+import Checkoutform from './Components/Checkoutform';
 
 function App() {
   let [games, setGames] = useState([]);
@@ -25,13 +26,13 @@ function App() {
 
   useEffect(() => {
     const getGames = async () => {
-      const tasksFromServer = await fetchGames();
-      setGames(tasksFromServer);
+      const gamesFromServer = await fetchGames();
+      setGames(gamesFromServer);
     };
     getGames();
   }, []);
 
-console.log("The data is an "+ Array.isArray(games))
+
 return (
   <div className="App">
     <Router>
@@ -44,6 +45,7 @@ return (
           <Route path="/gamedetails/:id" element={<GameDetails cartGames={cartGames} />} />
           <Route path="/cart" element={<Checkout games={cartGames} />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/cartForm" element={<Checkoutform cartGames={cartGames}/>}/>
         </Routes>
       </div>
     </Router>

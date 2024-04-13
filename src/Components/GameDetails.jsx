@@ -14,14 +14,14 @@ const GameDetails = ({cartGames}) => {
   console.log(useParams());
 
   useEffect(() => {
-    const fetchTask = async () => {
+    const fetchGame = async () => {
       const res = await fetch(`http://localhost:5000/games/${params.id}`);
       const data = await res.json();
 console.log(data);
       setGame(data);
     };
 
-    fetchTask();
+    fetchGame();
     
   });
   
@@ -32,32 +32,23 @@ console.log(data);
     <div className="detailsPage">
       <div className="gameInfo">
         <img src={`${gameDetails.picture}`} height = "300px" width ="255px"/>
-        <h2>{gameDetails.name}</h2>
-        <p>For {gameDetails.console}</p>
-        {
-        gameDetails.name != cartGames.forEach((game)=>{
-          return game.name
-        }) ? (
+        <h2 data-testid="gameName">{gameDetails.name}</h2>
+        <p data-testid="console">For {gameDetails.console}</p>
+        
      
         <Button text = {"Add to cart"} onClick = {() => {
         cartGames.push(gameDetails)
-        gameDetails.cart = true
-        console.log("cart"+gameDetails.cart);
         alert(gameDetails.name+" added to cart!")
       }
       }/> 
-        ): (
-        <p>
-            Game in cart
-        </p>
-        )}
+        
       </div>
         <div className="gameText">
-            <h4>
+            <h4 data-testid="gameDes">
                 About This Item
             </h4>
             <hr/>
-            <p>
+            <p data-testid="gameInfo">
                 {gameDetails.info}
             </p>
         </div>

@@ -5,11 +5,12 @@ import {  useNavigate, Link } from "react-router-dom";
 
 const Checkoutgames = ({games, cartGames}) => {
     const navigate = useNavigate();
+    numGames=0;
 
   return (
     <>
    { games.map((game) => (
-        <div class = "container">
+        <div class = "container" key ={"1"+game.id}>
          <Link to ={`/gamedetails/${game.id}`}>
             <img src = {game.picture} width ="136" height ="243"/>
             </Link>
