@@ -5,7 +5,7 @@ import {  useNavigate, Link } from "react-router-dom";
 
 const Checkoutgames = ({games, cartGames}) => {
     const navigate = useNavigate();
-    numGames=0;
+    
 
   return (
     <>
