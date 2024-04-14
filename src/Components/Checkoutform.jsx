@@ -2,7 +2,9 @@ import { setSelectionRange } from '@testing-library/user-event/dist/utils';
 import React from 'react'
 import { useState } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
+// A componet for having a form for the user to use for purchasing their games
 
+//object that contians all of the users data for purchasing games
 class Details{
   constructor(n,st,c,p,count,post,cardNum,cardExpir,cardSecur){
       this.name = n;
@@ -29,18 +31,20 @@ const Checkoutform = ({cartGames, purchaseInfo}) => {
   let [securityCode, setSecurityCode] = useState("");
   const navigate = useNavigate();
 
+  //Enter if the user hits submit
     let onSubmit = (e) => {
         e.preventDefault();
-        console.log(name)
+       
+        //enter if the user did not fill out all the feilds
         if (name===""||!stAdd===""||!city===""||!province===""||!country===""||!postal===""||cardNumber===""||!cardExrp===""||!securityCode==="") {
           alert("Please fill all textboxs");
           return;
           
         }
-        
+       //create an object from the data the user subbited 
        let  details = new Details(name,stAdd,city,province,country,postal,cardNumber,cardExrp,securityCode)
        purchaseInfo.push(details)
-       console.log("details: "+ purchaseInfo)
+      //navigate to the confirm page
        navigate("/confirm");
        
       }

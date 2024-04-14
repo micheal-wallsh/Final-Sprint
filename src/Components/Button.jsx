@@ -1,5 +1,5 @@
 import React from 'react'
-
+// A Button Componet
 const Button = ({text, onClick}) => {
   return (
     <button

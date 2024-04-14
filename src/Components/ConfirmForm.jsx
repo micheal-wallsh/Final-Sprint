@@ -1,8 +1,11 @@
 import React from 'react'
 import Button from './Button'
 import { useParams, useNavigate, useLocation } from "react-router-dom";
+//A componet to have the user display the data they submitted for checkout
 
 const ComfirmForm = ({details, cartGames}) => {
+
+  
   let info = details[0]
   const navigate = useNavigate();
 
@@ -52,7 +55,10 @@ const ComfirmForm = ({details, cartGames}) => {
         }}/>
 
 <Button color={"White"} text={"Confirm"} onClick={()=>{
+            //Enter if the information is correct
             alert("Thank you for your purchase!");
+
+            //empty both the games in he cart and the users data
             cartGames=[];
             details=[];
             navigate("/");

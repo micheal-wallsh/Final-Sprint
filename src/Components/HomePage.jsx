@@ -3,6 +3,7 @@ import xboxLogo from "../Pictures/Xbox logo.png"
 import psLogo from "../Pictures/ps5 logo.png"
 import { Link } from "react-router-dom";
 import "./HomePage.css"
+//The homepage componet for the website
 
 const HomePage = (games) => {
     return (

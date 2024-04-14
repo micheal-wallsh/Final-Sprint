@@ -3,21 +3,21 @@ import { useParams, useNavigate, useLocation } from "react-router-dom";
 import Button from"./Button";
 import BackButton from "./BackButton"
 import "./GameDetails.css"
+//Componet to display the details of a selected game
 
 const GameDetails = ({cartGames}) => {
   const [gameDetails, setGame] = useState({});
   
-  const [error, setError] = useState(null);
 
   const params = useParams();
   const navigate = useNavigate();
-  console.log(useParams());
-
+  
+// obtian the dat of the game from the json-server
   useEffect(() => {
     const fetchGame = async () => {
       const res = await fetch(`http://localhost:5000/games/${params.id}`);
       const data = await res.json();
-console.log(data);
+
       setGame(data);
     };
 
@@ -37,6 +37,7 @@ console.log(data);
         
      
         <Button text = {"Add to cart"} onClick = {() => {
+          //Add game to the cart
         cartGames.push(gameDetails)
         alert(gameDetails.name+" added to cart!")
       }

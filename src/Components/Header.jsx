@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import shoppingCart from "../Pictures/Shopping Cart.png"
 import logo from "../Pictures/Logo.jpg"
 import './Header.css'
+//A header componet for the website
 
 const Header = (games) => {
   return (
