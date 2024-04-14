@@ -17,10 +17,10 @@ function App() {
   let cartGames = [];
   let purchaseInfo =[];
 
+  //Obtian all the game objects from the json-server
   const fetchGames= async () => {
     const res = await fetch("http://localhost:5000/games");
     const data = await res.json();
-    console.log(data)
     
     return data;
   }

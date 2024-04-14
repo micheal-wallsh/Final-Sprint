@@ -2,7 +2,7 @@ import React from 'react'
 import Checkoutgames from './Checkoutgames'
 import Button from './Button';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
-
+//A componet to display the games in cart and the total price
 
 const Checkoutformat = ({games, price}) => {
  
