@@ -13,7 +13,7 @@ const Header = (games) => {
         <p id="logoText">GAME OVER GAME STORE</p>
       </div>
       <div className="bannerSpace">
-        hey
+
       </div>
       <div className="buttonSpace">
         <Link to ="/cart" className="cartButton"><img src={shoppingCart} width="50px" height="50px"/></Link>
