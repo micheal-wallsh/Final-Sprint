@@ -52,8 +52,9 @@ const ComfirmForm = ({details, cartGames}) => {
         }}/>
 
 <Button color={"White"} text={"Confirm"} onClick={()=>{
-            alert("Thank you for ypur purchase!");
+            alert("Thank you for your purchase!");
             cartGames=[];
+            details=[];
             navigate("/");
         }}/>
     </div>
