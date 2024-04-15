@@ -1,7 +1,12 @@
 # Project Info
 
-Made by Micheal Walsh and Lucas Peddle
+Made by Micheal Walsh and Lucas Peddle.
 Do npm install, npm start and then npm run server to get website up and running. 
+
+## Who did what?
+
+Luke was responsible for most of the backend work like creating the framework for the database and setting up the site and did the majority of the work on the cart section.
+Micheal was responsible for creating pages like the home page and the store sections along with the styling of the site, also helped with filling in database pictures.
 
 ## Getting Started with Create React App
 
